@@ -1,6 +1,4 @@
-# Keylogger
-
-## Keyboard Hook & Persistence Analysis (Educational Cybersecurity Research)
+# Keyboard Hook & Persistence Analysis (Educational Cybersecurity Research)
 
 > ⚠️ **Ethical Use Notice**  
 > This repository is intended **strictly for cybersecurity education, malware analysis training, and defensive research**.  
