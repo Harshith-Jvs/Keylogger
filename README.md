@@ -30,22 +30,18 @@ The analyzed architecture follows a typical **dropper–payload structure** ofte
 ### Execution Flow
 System Startup
 │
-▼
 Startup Launcher
 │
-▼
 Executable Payload
 │
-▼
 Windows API Interaction
 │
-▼
 Event Processing / Logging
 
 
 ---
 
-# Windows API Concepts Demonstrated
+## Windows API Concepts Demonstrated
 
 This project examines several Windows API mechanisms frequently studied in **malware analysis and endpoint detection research**.
 
@@ -131,7 +127,9 @@ Security professionals detect suspicious behavior using multiple strategies.
 
 Watch for unexpected executables in directories such as:
 C:\Users\Public
+
 C:\ProgramData
+
 Startup folders
 
 ---
